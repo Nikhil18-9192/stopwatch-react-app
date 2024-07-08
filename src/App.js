@@ -1,23 +1,10 @@
-import logo from './logo.svg';
-import './App.css';
+import './App.scss';
+import StopWatch from './components/StopWatch';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="App bg-slate-800 h-screen  md:h-auto md:p-12 lg:h-screen lg:p-14  sm:h-auto sm:p-0 sm:h-screen">
+      <StopWatch />
     </div>
   );
 }
